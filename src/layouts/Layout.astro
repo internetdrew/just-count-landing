@@ -1,23 +1,26 @@
 ---
-import '../styles/global.css'
+import { Button } from "@/components/ui/button";
+import "../styles/global.css";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Just the Count</title>
-	</head>
-	<body>
-		<nav>
-			<div class="max-w-screen-lg	mx-auto p-4">
-				<a href="/" class="font-semibold">Just the Count</a>
-			</div>
-		</nav>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Just the Count</title>
+  </head>
+  <body>
+    <nav>
+      <div
+        class="max-w-screen-lg mx-auto p-4 flex justify-between items-center"
+      >
+        <a href="/" class="text-lg font-semibold">Just the Count</a>
+        <Button size="sm" className="text-xs sm:text-sm">Get Started</Button>
+      </div>
+    </nav>
+    <slot />
+  </body>
 </html>
-
