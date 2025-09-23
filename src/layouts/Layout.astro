@@ -2,6 +2,10 @@
 import { Button } from "@/components/ui/button";
 import "../styles/global.css";
 import { ModeToggle } from "@/components/ModeToggle";
+
+const description =
+  "Simple daily inventory counts for small businesses. Track stock across multiple locations without spreadsheet chaos or expensive enterprise software.";
+const ogImageUrl = "https://www.justthecount.com/og.png";
 ---
 
 <script is:inline>
@@ -35,6 +39,23 @@ import { ModeToggle } from "@/components/ModeToggle";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Just the Count</title>
+
+    <meta name="description" content={description} />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.justthecount.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Just the Count" />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="justthecount.com" />
+    <meta property="twitter:url" content="https://www.justthecount.com/" />
+    <meta name="twitter:title" content="Just the Count" />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
   </head>
   <body>
     <nav>
