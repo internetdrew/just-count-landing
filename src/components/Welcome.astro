@@ -1,10 +1,15 @@
-<div class="max-w-screen-md mx-auto px-4 text-left my-16 md:text-center">
-  <h1 class="text-4xl font-black md:text-6xl/18">
-    Daily Inventory Counts,<br /> Made Simple
+---
+import { Button } from "./ui/button";
+---
+
+<div class="max-w-screen-md mx-auto px-4 text-left my-24 sm:text-center">
+  <h1 class="text-2xl font-black md:text-4xl">
+    Know What's in Stock at Every Shop, Without Scanners or Complex Software
   </h1>
-  <p class="text-xl text-muted-foreground font-light mt-4 md:text-2xl">
-    Quick daily counts for local businesses. No spreadsheet chaos, no overpriced
-    licenses, no bloated features.
+  <p class="text-muted-foreground font-light mt-4 md:text-xl">
+    Easily track inventory across all your locations, see real-time stock
+    updates, and avoid running out of (or overstocking) your most important
+    items.
   </p>
 
   <div
@@ -16,5 +21,10 @@
       allowfullscreen
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     ></iframe>
+  </div>
+  <div class="mt-8 flex items-center justify-center">
+    <Button variant={"link"}>
+      <a href="https://app.justthecount.com/">Get Started</a>
+    </Button>
   </div>
 </div>
