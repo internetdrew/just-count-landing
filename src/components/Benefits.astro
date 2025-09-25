@@ -9,46 +9,41 @@ import { Button } from "./ui/button";
 
 const benefits = [
   {
-    title: "Simple to Use",
-    description:
-      "Set up your locations and items once. Then do quick daily counts without the spreadsheet chaos.",
+    title: "Multi-Location Dashboard",
+    description: "See stock levels at every shop from one screen.",
   },
   {
-    title: "Insights at a Glance",
-    description:
-      "Get a snapshot of your inventory across all locations or take a closer look at specific locations.",
+    title: "Fast Manual Updates",
+    description: "Your staff logs inventory in seconds.",
   },
   {
-    title: "Use on Any Device",
+    title: "Track Transfers with Ease",
     description:
-      "Monitor and update your inventory from your phone, tablet, or computer. No desktop-only limitations.",
+      "Keep track of stock transfers between locations with a simple update.",
   },
   {
-    title: "You're In The Loop",
+    title: "Mobile-Friendly",
     description:
-      "Your feedback will reflect in how the app grows. Not every idea ships, but every voice shapes the direction.",
+      "Update inventory on the go, from a phone or tablet, as items are used.",
   },
 ];
 ---
 
 <div class="max-w-screen-lg mx-auto px-4 text-left my-40">
-  <h2 class="text-2xl font-black md:text-3xl">
-    Built for small business.<br />Not large warehouses.
+  <h2 class="text-xl font-black max-w-lg md:text-3xl">
+    Running Multiple Shops Is Hard. Keeping Track of Inventory Shouldn't Be.
   </h2>
-  <p
-    class="sm:max-w-1/2 text-lg text-muted-foreground font-light my-2 md:text-xl"
-  >
-    Perfect for daily counts and quick stock checks across multiple locations.
+  <p class="text-muted-foreground font-light my-2 max-w-md md:text-lg">
+    See what's in stock at every location, avoid wasted items, and simplify
+    transfers, all from one easy dashboard.
   </p>
   <div class="mt-4 grid sm:grid-cols-2 gap-4">
     {
       benefits.map((feature) => (
         <Card key={feature.title}>
           <CardHeader>
-            <CardTitle className="text-lg font-semibold">
-              {feature.title}
-            </CardTitle>
-            <CardDescription className="text-base text-neutral-500">
+            <CardTitle className="font-semibold">{feature.title}</CardTitle>
+            <CardDescription className=" text-neutral-500">
               {feature.description}
             </CardDescription>
           </CardHeader>
@@ -57,7 +52,7 @@ const benefits = [
     }
   </div>
   <div class="mt-8 flex items-center justify-center">
-    <Button variant="link" className="text-lg">
+    <Button variant="link">
       <a href="https://app.justthecount.com/">Get Started</a>
     </Button>
   </div>
