@@ -1,5 +1,4 @@
 ---
-import { Button } from "@/components/ui/button";
 import "../styles/global.css";
 import { ModeToggle } from "@/components/ModeToggle";
 
@@ -88,13 +87,17 @@ const ogImageUrl = "https://www.justthecount.com/og.png";
           Just the Count</a
         >
         <div class="flex items-center">
-          <Button variant={"link"}>
-            <a href="https://app.justthecount.com/">Get Started</a>
-          </Button>
+          <a
+            href="https://app.justthecount.com/"
+            class="text-sm underline-offset-4 font-medium transition duration-150 hover:text-pink-600 hover:underline"
+            >Get Started</a
+          >
           <ModeToggle client:load />
         </div>
       </div>
     </nav>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
